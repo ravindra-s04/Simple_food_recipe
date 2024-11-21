@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav{
+    width: 100vw;
+}
+
+#navlist{
+    padding: 15px;
+    list-style: none;
+    font-size: 2rem;
+display: flex;
+justify-content: space-between;
+margin-left: 5px;
+margin-right: 5px;
+align-items: center;
+
+}
+
+.container{
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    background-color: #E0C3FC;
+    background-image: linear-gradient(62deg, #E0C3FC 99%, #8EC5FC 100%);
+
+   
+}
+.navcontainer{
+    width: 100vw;
+    min-height: 80px;
+    /* background-image: url(bg.webp); */
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 44%, rgba(0,212,255,1) 100%);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    
+}
+#navpara{
+font-size: 2rem;
+color: azure;
+}
+#navitems{
+    display: flex;
+    gap: 20px;
+}
+a{
+    text-decoration: none;
+    color: azure;
+}
+a:hover{
+    color: aqua;
+}
+.footerBox{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 44%, rgba(0,212,255,1) 100%);
+    /* color: azure; */
+   
+    min-height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footerBox p{
+    color: azure;
+    font-size: 1.5rem;
+
+}
+
+.contentBox{
+    width: 70%;
+    margin: auto;
+    border: solid grey 1px;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    padding: 3rem;
+    box-shadow: 3px 3px 30px  black;
+}
+.item{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.rightbox:hover {
+    transform: scale(1.2);
+}
+.rightbox img {
+height: 300px;
+border-radius: 20px;
+transition: all 0.6s linear 0s;
+filter: drop-shadow(10px 10px 4px #424292dc);
+}
+.rightbox{
+    position: relative;
+    
+}
+.leftBox{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.leftBox h2 {
+    font-size: 1.5rem;
+}
+.leftBox h1 {
+    font-size: 2rem;
+  
+}
+.ingBox{
+    font-size: 1.1rem;
+}
+.recipebox{
+    font-size: 1.1rem;
+}
+.rightbox .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(160, 145, 145, 0.682);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: all 0.6s linear 0s;
+}
+.rightbox .overlay .span{
+    color: azure;
+    font-size: 1.1rem;
+}
+.rightbox:hover .overlay{
+    opacity: 1;
+}
+#logo{
+    height: 40px;
+    transition: all 2s linear 0s;
+}
+#logo:hover{
+    transform: rotate(360deg);
+}
+.leftBox h1:hover{
+    transform: scale(1.1);
+}
